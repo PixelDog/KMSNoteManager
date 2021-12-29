@@ -12,10 +12,16 @@
   require_once("./Core/Database/Database.php");
   require_once("./Core/Services/Curl/CurlService.php");
   require_once("./Core/Page/Page.php");
+  require_once("./Core/Router/Router.php");
 
   use \KMS\Database\Database;
   use \KMS\Curl\CurlService;
   use \KMS\Page\Page;
+
+  $router = new Router();
+  $router->route();
+
+  die();
 
   $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
