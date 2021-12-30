@@ -26,7 +26,7 @@ class CurlModel
   public function getJson($userId)
   {
     $curlMe = new CurlService(
-      "http://localhost:8080/KMSNotes/curl/fetchData", // url
+      APP_PATH . "curl/fetchData", // url
       ["userId" => $userId], // url params
       [ // curl opts
         CURLOPT_RETURNTRANSFER => true,
