@@ -14,19 +14,25 @@ SETUP
 
 2) Edit Config/_config.php with the appropriate values for your environment.
    Values are as follows:
+   
    // host
+   
    define('HOST', 'localhost');
 
    // database user
+   
    define('DBUSER', 'root');
 
    // database password
+   
    define('DBPW', 'root99');
 
    // database name
+   
    define('DB', 'kms_notes');
 
    // app path info
+   
    define('APP_PATH', 'http://localhost:8080/KMSNotes/');
    
    Note: If you decide to change the database name, you must also change it in:
