@@ -10,23 +10,24 @@ class IndexView
 
   private $controller;
 
+  private $html;
+
   function __construct($controller, $model)
   {
     $this->controller = $controller;
 
     $this->model = $model;
 
-    print "Home - ";
+    $html = file_get_contents(__DIR__ ."/../Core/Templates/Head.html");
+
+    $html .= file_get_contents(__DIR__."/../Core/Templates/Foot.html");
+
+    echo $html;
   }
 
   public function index()
   {
-    return $this->controller->sayWelcome();
-  }
-
-  public function action()
-  {
-    return $this->controller->takeAction();
+    return $this->controller->auth();
   }
 
 }

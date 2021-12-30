@@ -1,7 +1,6 @@
 <?php
 
 /**
-
 * The home page model
 */
 class IndexModel
@@ -14,7 +13,7 @@ class IndexModel
 
   }
 
-  public function welcomeMessage()
+  public function auth()
   {
     return $this->message;
   }

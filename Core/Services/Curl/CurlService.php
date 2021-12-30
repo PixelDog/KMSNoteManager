@@ -30,7 +30,7 @@ class CurlService
   public function load()
   {
     if (!empty($this->params)) {
-      $queryUrl = $this->url . "?" . http_buld_query($this->params);
+      $queryUrl = $this->url . "?" . http_build_query($this->params);
     } else {
       $queryUrl = $this->url;
     }

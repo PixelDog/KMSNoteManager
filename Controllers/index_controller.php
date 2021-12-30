@@ -1,5 +1,6 @@
 <?php
-
+require_once(__DIR__ . "/../Core/Auth/Auth.php");
+use KMS\Auth\Auth;
 /**
 * The home page controller
 */
@@ -12,9 +13,13 @@ class IndexController
     $this->model = $model;
   }
 
-  public function sayWelcome()
+  public function auth()
   {
-    return $this->model->welcomeMessage();
+
+    $auth = new Auth();
+    $auth->validate();
+
+    // return $this->model->auth();
   }
 
 }
