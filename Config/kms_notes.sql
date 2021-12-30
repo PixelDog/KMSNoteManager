@@ -18,12 +18,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `kms_notes2`
+-- Database: `kms_notes`
 --
 
-CREATE DATABASE kms_notes2;
+CREATE DATABASE kms_notes;
 
-use kms_notes2;
+use kms_notes;
 
 -- --------------------------------------------------------
 
