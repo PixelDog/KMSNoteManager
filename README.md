@@ -63,6 +63,7 @@ http://localhost:8080/KMSNotes/
 That will require you to log in using basic http authentication. With the sample
 DB installed, the user is:
 
+
 User Name: joe_cool@cool.com
 
 Password: SoCool
