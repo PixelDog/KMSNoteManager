@@ -95,4 +95,11 @@ class Database
       return $result;
     }
 
+    /*
+    * @param string $query
+    */
+    public function dbSampleInstall(string $query)
+    {
+      $statement = $this->conn->multi_query($query);
+    }
   }
