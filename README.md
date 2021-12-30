@@ -37,12 +37,13 @@ SETUP
    
    Note: If you decide to change the database name, you must also change it in:
    Config/kms_notes.sql, lines 21-26:
+   
    -- Database: `kms_notes`
    --
 
-   CREATE DATABASE kms_notes;
+   CREATE DATABASE kms_notes; -- change this here
 
-   use kms_notes;
+   use kms_notes; -- change this here
    
 3) In the Config folder, from the terminal, run:
    php installDB.php
